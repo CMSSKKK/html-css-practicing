@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>coinFlip</title>
+    <style>
+      @keyframes coinFlip {
+        from {
+          transform: rotateX(0);
+        }
+        to {
+          transform: rotateX(360deg);
+        }
+      }
+      img {
+        border: 10px solid black;
+        border-radius: 50%;
+        animation: coinFlip 3s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="구글1.png" />
+  </body>
+</html>
