@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>coinFlip</title>
+    <style>
+      @keyframes coinFlip {
+        0% {
+          transform: rotateX(0);
+        }
+        33% {
+          transform: rotateX(180deg) translateY(300px);
+        }
+        66% {
+          transform: rotateX(360deg) scale(2);
+        }
+        100% {
+          transform: rotateX(0);
+        }
+      }
+      body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+      img {
+        border: 10px solid black;
+        border-radius: 50%;
+        width: 200px;
+        animation: coinFlip 3s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="구글1.png" />
+  </body>
+</html>
